@@ -6,4 +6,7 @@ Feature: Login
     Given user is on the landing page
     Then user enter username and password
     And user verifies that "Files"page subtitle is displayed
+    Then  as a user i can verify on different subtitles
+
+
 

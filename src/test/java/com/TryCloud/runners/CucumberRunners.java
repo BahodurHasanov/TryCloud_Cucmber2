@@ -8,7 +8,10 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = "com/TryCloud/step_definitions"
+        glue = "com/TryCloud/step_definitions",
+        dryRun = false
+
+
 )
 public class CucumberRunners {
 
