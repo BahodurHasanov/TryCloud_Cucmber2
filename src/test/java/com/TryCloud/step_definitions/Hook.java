@@ -8,6 +8,7 @@ public class Hook {
 
     @Before
     public void setup(){
+        System.out.println("============================");
         System.out.println("Test SetUP!");
     }
 
@@ -15,6 +16,9 @@ public class Hook {
     public void teardown(){
         System.out.println("CleanUp");
         System.out.println("Test Completed");
+        System.out.println("=============================");
+        System.out.println("" +
+                "");
     }
 
 

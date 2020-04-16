@@ -10,3 +10,11 @@ Feature: Login
 
 
 
+  Scenario: Login as a User2
+    Given user is on the landing page
+    Then user enter username and password
+    And user verifies that "Gallery"page subtitle is displayed
+    Then  as a user i can verify on different subtitles
+
+
+
