@@ -9,7 +9,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "com/TryCloud/step_definitions",
-        dryRun = false
+        dryRun = false,
+        tags = "@Gallery",
+        plugin = {"html:target/default-cucumber-reports"}
 
 
 )

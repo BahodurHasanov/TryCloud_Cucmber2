@@ -1,5 +1,6 @@
 package com.TryCloud.step_definitions;
 
+import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
@@ -12,17 +13,19 @@ public class Hook {
         System.out.println("Test SetUP!");
     }
 
+
+
     @After
-    public void teardown(){
-        System.out.println("CleanUp");
-        System.out.println("Test Completed");
+    public void teardown(Scenario scenario){
+        if(scenario.isFailed()){
+            System.out.println("Test Failed");
+        }else {
+            System.out.println();
+
+            System.out.println("CleanUp");
+            System.out.println("Test Completed");
+        }
         System.out.println("=============================");
-        System.out.println("" +
-                "");
+        System.out.println("  ");
     }
-
-
-
-
-
 }
